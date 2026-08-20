@@ -1,0 +1,10 @@
+# Override linguist to show "Verilog" as primary language instead of MATLAB
+*.m linguist-detectable=false
+*.tcl linguist-detectable=false
+*.png linguist-generated=true
+*.tiff linguist-generated=true
+*.csv linguist-generated=true
+
+# Mark MATLAB files as "Verilog/SystemVerilog" so GitHub shows VLSI-related language
+# (GitHub doesn't have a native "VLSI" language; closest match)
+*.m linguist-language=SystemVerilog
